@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd"> -->
+        
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- xml파일이 스프링의 동작 수행(마트,쇼핑몰....) -->
+	
+	<!-- 객체생성 MsgBeanKr mbi = new MsgBeanKr(); -->
+	<bean id="mbi" class="com.itwillbs.spring.MsgBeanKr" />
+	
+	<!-- HelloApp 객체(빈) 생성 -->
+	<bean id="helloApp" class="com.itwillbs.spring.HelloApp" />
+	
+	<context:component-scan base-package="com.itwillbs.spring" />
+	
+</beans>

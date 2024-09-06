@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<!-- xml파일이 스프링의 동작 수행(마트,쇼핑몰....) -->
+	
+	<!-- 객체생성 MsgBeanKr mbi = new MsgBeanKr(); -->
+	<bean id="mbi" class="com.itwillbs.spring.MsgBeanKr" />
+	
+</beans>
